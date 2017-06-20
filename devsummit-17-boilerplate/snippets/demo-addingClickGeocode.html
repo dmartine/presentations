@@ -1,0 +1,64 @@
+
+<script>
+function snippet() {
+  config.portalUrl = "https://jsapi.maps.arcgis.com";
+
+  var scene = new WebScene({
+    portalItem: {
+      id: "08b87d5949ea44e2a94d1b6efd95007b"
+    }
+  });
+
+  var view = new SceneView({
+    map: scene,
+    container: "viewDiv"
+  });
+  
+        var locatorTask = new Locator({
+        url: "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+      });
+  
+        view.on("click", function(evt) {
+        var screenPoint = evt.screenPoint;
+        view.hitTest(screenPoint)
+		
+		var lat = Math.round(evt.mapPoint.latitude * 1000) / 1000;
+        var lon = Math.round(evt.mapPoint.longitude * 1000) / 1000;
+		console.log(lat + " " + lon);
+        view.popup.open({
+          // Set the popup's title to the coordinates of the location
+          title: "Reverse geocode: [" + lon + ", " + lat + "]",
+          location: evt.mapPoint // Set the location of the popup to the clicked location
+        });
+		
+		 // Display the popup
+        // Execute a reverse geocode using the clicked location
+        locatorTask.locationToAddress(evt.mapPoint).then(function(
+          response) {
+          // If an address is successfully found, print it to the popup's content
+          var address = response.address.Match_addr;
+          view.popup.content = address;
+        }).otherwise(function(err) {
+          // If the promise fails and no result is found, print a generic message
+          // to the popup's content
+          view.popup.content =
+            "No address was found for this location";
+        });
+   
+      });
+  
+}
+
+modules = ["esri/config",
+  "esri/tasks/Locator",
+      "esri/WebScene",
+      "esri/views/SceneView"];
+
+settings = {
+  disableLog: true,
+  disableOverviewMap: true
+};
+
+</script>
+
+<script src="./support/snippet.js"></script>

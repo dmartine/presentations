@@ -1,0 +1,56 @@
+<script>
+var line;
+
+function snippet() {
+  view = new SceneView({
+    container: "viewDiv",
+
+    map: new EsriMap({
+      basemap: "satellite",
+      ground: "world-elevation"
+    }),
+
+    environment: {
+      starsEnabled: false
+    },
+
+    center: [0, 0]
+  });
+}
+
+var playing;
+
+function rotateView(easing) {
+  var cam = view.camera.clone();
+  cam.position = {
+      longitude: cam.position.longitude + 90,
+      latitude: cam.position.latitude,
+      z: cam.position.z
+  };
+  return view.goTo({
+    target: cam
+  }, {
+    duration: 5000,
+    easing: easing
+  });
+}
+
+function play() {
+  rotateView("linear")
+  .then(function() {
+    return rotateView("in-out-cubic");
+  })
+  .then(function() {
+    rotateView("in-out-expo");
+  });
+}
+
+settings = {
+  disableLog: true,
+  disableOverviewMap: true
+};
+
+modules = ["esri/core/Scheduler", "esri/geometry/Point"];
+</script>
+
+<script src="./support/snippet.js"></script>

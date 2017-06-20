@@ -1,0 +1,29 @@
+
+<script>
+function snippet() {
+  config.portalUrl = "https://jsapi.maps.arcgis.com";
+
+  var scene = new WebScene({
+    portalItem: {
+      id: "08b87d5949ea44e2a94d1b6efd95007b"
+    }
+  });
+
+  var view = new SceneView({
+    map: scene,
+    container: "viewDiv"
+  });
+}
+
+modules = ["esri/config",
+      "esri/WebScene",
+      "esri/views/SceneView"];
+
+settings = {
+  disableLog: true,
+  disableOverviewMap: true
+};
+
+</script>
+
+<script src="./support/snippet.js"></script>

@@ -1,0 +1,40 @@
+<script>
+function snippet() {
+  view = new SceneView({
+    container: "viewDiv",
+
+    map: new EsriMap({
+      basemap: "hybrid",
+      ground: "world-elevation"
+    }),
+
+    camera: {
+      position: {
+        x: 8.062,
+        y: 46.042,
+        z: 14813.5
+      },
+      heading: 0,
+      tilt: 80
+    }
+  });
+
+  view.watch("camera", function(camera) {
+    window.log("Heading:", Math.round(camera.heading));
+  });
+}
+
+function play() {
+  var h = view.camera.heading;
+
+  var m = 30;
+
+  var heading = Math.floor((h + 1e-3) / m) * m + m;
+
+  view.goTo({
+    heading: heading
+  });
+}
+</script>
+
+<script src="./support/snippet.js"></script>

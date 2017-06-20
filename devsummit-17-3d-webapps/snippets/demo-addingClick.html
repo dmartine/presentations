@@ -1,0 +1,43 @@
+
+<script>
+function snippet() {
+  config.portalUrl = "https://jsapi.maps.arcgis.com";
+
+  var scene = new WebScene({
+    portalItem: {
+      id: "08b87d5949ea44e2a94d1b6efd95007b"
+    }
+  });
+
+  var view = new SceneView({
+    map: scene,
+    container: "viewDiv"
+  });
+  
+        var locatorTask = new Locator({
+        url: "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+      });
+  
+        view.on("click", function(evt) {
+        var screenPoint = evt.screenPoint;
+        view.hitTest(screenPoint)
+		
+		
+   
+      });
+  
+}
+
+modules = ["esri/config",
+  "esri/tasks/Locator",
+      "esri/WebScene",
+      "esri/views/SceneView"];
+
+settings = {
+  disableLog: true,
+  disableOverviewMap: true
+};
+
+</script>
+
+<script src="./support/snippet.js"></script>

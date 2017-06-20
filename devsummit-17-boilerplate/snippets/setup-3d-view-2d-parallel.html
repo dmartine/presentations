@@ -1,0 +1,67 @@
+<script>
+function snippet() {
+  var map = new EsriMap({
+    basemap: "dark-gray-vector",
+
+    layers: [ new FeatureLayer("http://services.arcgis.com/RkjCp6A0cLN4ubJm/arcgis/rest/services/Ward_-_2012/FeatureServer/0") ]
+  });
+
+  var extent = {
+    xmax: -8554887.47,
+    xmin: -8598074.39,
+    ymax: 4727302.79,
+    ymin: 4681440.57,
+
+    spatialReference: 102100
+  };
+
+  document.body.appendChild(create("div", {
+    id: "viewDivLeft"
+  }));
+
+  viewLeft = new MapView({
+    container: "viewDivLeft",
+
+    map: map,
+    extent: extent
+  });
+
+  document.body.appendChild(create("div", {
+    id: "viewDivRight"
+  }));
+
+  viewRight = new SceneView({
+    container: "viewDivRight",
+
+    map: map,
+    extent: extent
+  });
+
+  all([viewLeft, viewRight]).then(function() {
+    viewLeft.watch("viewpoint", function(viewpoint) {
+      if (viewLeft.interacting || viewLeft.animation) {
+        viewRight.viewpoint = viewpoint;
+        viewRight.extent = viewLeft.extent;
+      }
+    });
+
+    viewRight.watch("viewpoint", function(viewpoint) {
+      if (viewRight.interacting || viewRight.animation) {
+        viewLeft.viewpoint = viewpoint;
+        viewLeft.extent = viewRight.extent;
+      }
+    });
+  });
+}
+
+settings = {
+  disableOverviewMap: true,
+  disableLog: true,
+  disableViewDiv: true
+};
+
+modules = ["esri/layers/FeatureLayer", "dojo/promise/all"];
+
+</script>
+
+<script src="./support/snippet.js"></script>

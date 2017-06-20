@@ -1,0 +1,239 @@
+
+<script>
+function snippet() {
+  config.portalUrl = "https://jsapi.maps.arcgis.com";
+
+  var scene = new WebScene({
+    portalItem: {
+      id: "08b87d5949ea44e2a94d1b6efd95007b"
+    }
+  });
+
+
+
+  var view = new SceneView({
+    map: scene,
+    container: "viewDiv"
+  });
+
+
+  var searchWidget = new Search({
+  view: view
+});
+
+var basemapToggle = new BasemapToggle({
+  view: view,  // The view that provides access to the map's "streets" basemap
+  nextBasemap: "hybrid"  // Allows for toggling to the "hybrid" basemap
+});
+ view.ui.add(basemapToggle, "bottom-right");
+
+
+// Adds the search widget below other elements in
+// the top left corner of the view
+view.ui.add(searchWidget, {
+  position: "top-right",
+  index: 2
+});
+  
+     var locatorTask = new Locator({
+        url: "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+      });
+  
+        view.on("click", function(evt) {
+        var screenPoint = evt.screenPoint;
+        view.hitTest(screenPoint)
+		
+		var lat = Math.round(evt.mapPoint.latitude * 1000) / 1000;
+        var lon = Math.round(evt.mapPoint.longitude * 1000) / 1000;
+		console.log(lat + " " + lon);
+        view.popup.open({
+          // Set the popup's title to the coordinates of the location
+          title: "Reverse geocode: [" + lon + ", " + lat + "]",
+          location: evt.mapPoint // Set the location of the popup to the clicked location
+        });
+		
+		 // Display the popup
+        // Execute a reverse geocode using the clicked location
+        locatorTask.locationToAddress(evt.mapPoint).then(function(
+          response) {
+          // If an address is successfully found, print it to the popup's content
+          var address = response.address.Match_addr;
+          view.popup.content = address;
+        }).otherwise(function(err) {
+          // If the promise fails and no result is found, print a generic message
+          // to the popup's content
+          view.popup.content =
+            "No address was found for this location";
+        });
+   
+      });
+  
+	  
+		view.environment.atmosphere.quality = "high"
+		view.environment.lighting.cameraTrackingEnabled = true;
+		view.environment.lighting.ambientOcclusionEnabled = true;
+		view.environment.lightingdirectShadowsEnabled = true;
+		view.environment.starsEnabled = true;
+		console.log(view.environment)
+		
+		/*setInterval(function(){ 
+		updateDirectShadows
+		
+		var increaseTime = 0
+		
+		increaseTime = increaseTime + 1
+		
+		var date = "Sun Mar 15 2015 " + increaseTime + ":00:00 GMT+0100 (CET)"
+		
+		view.environment.lighting.date = new Date(date)
+		
+		}, 1000);
+		
+		function updateDirectShadows(ev) {
+        view.environment.lighting.directShadowsEnabled = !!ev.target.checked;
+      }*/
+	  
+	  view.then(function(){
+        var menuDiv = document.getElementById("menuDiv");
+		
+		 var allLayers = scene.layers.flatten(function(layer) {
+          return layer.layers || layer.sublayers;
+        });
+
+        var featureLayers = allLayers
+        .filter(function(layer) {
+          return layer.operationalLayerType === "ArcGISFeatureLayer";
+        })
+        .sort(function(a, b) {
+          return a.title.localeCompare(b.title);
+        });
+		  featureLayers.forEach(function(layer) {
+          var hurricaneRenderer = new SimpleRenderer({
+            symbol: new PolygonSymbol3D({
+              symbolLayers: [
+                new ExtrudeSymbol3DLayer()
+              ]
+            }),
+            visualVariables: [{
+              type: "color",
+              field: "gridcode",
+              maxDataValue: 4,
+              stops: [{ value: 1, color: "#F5F500" },
+                      { value: 2, color: "#F57A00" },
+                      { value: 3, color: "#F50000" },
+                      { value: 4, color: "#F00"}]
+            },{
+              type: "size",
+              field: "gridcode",
+              valueUnit: "feet",
+              stops: [{ value: 1, size: 1 },
+                      { value: 2, size: 3 },
+                      { value: 3, size: 5 },
+                      { value: 4, size: 8 },
+                      { value: 5, size: 12 }]
+            }]
+          });
+          layer.renderer = hurricaneRenderer;
+          layer.elevationInfo = {
+            mode: "relative-to-ground",
+            offset: 0
+          };
+
+          var itemDiv = document.createElement("div");
+          itemDiv.className = layer.visible ? "itemDiv selected" : "itemDiv";
+          itemDiv.innerHTML = layer.title;
+          itemDiv.onclick = function(event) {
+            featureLayers.forEach(function(layer) { layer.visible = false; });
+            layer.visible = true;
+
+            var itemDivs = document.getElementsByClassName("itemDiv");
+            for (var i = 0; i < itemDivs.length; i++) {
+              itemDivs[i].classList.remove("selected");
+            }
+            itemDiv.classList.add("selected");
+          };
+
+
+          menuDiv.appendChild(itemDiv);
+        });
+		
+		
+		 var itemDiv = document.createElement("div");
+        itemDiv.className = "itemDiv gotoDiv";
+        itemDiv.innerHTML = "Goto Beverly Ct";
+        itemDiv.onclick = function(event) {
+          locator.addressToLocations({
+            address: {
+              "SingleLine": "Beverly Ct, Melbourne Beach, Florida, USA"
+            }
+          }).then(function(AddressCandidates) {
+            var location = AddressCandidates[0].location;
+            console.log(location);
+            view.goTo({
+              position: {
+                x: location.longitude,
+                y: location.latitude,
+                z: 50
+              }
+            });
+          });
+        };
+        menuDiv.appendChild(itemDiv);
+		
+		 var itemDiv = document.createElement("div");
+        itemDiv.className = "itemDiv gotoDiv";
+        itemDiv.innerHTML = "Goto Seagrape Rd";
+        itemDiv.onclick = function(event) {
+          locator.addressToLocations({
+            address: {
+              "SingleLine": "Seagrape Rd, Melbourne Beach, Florida, USA"
+            }
+          }).then(function(AddressCandidates) {
+            var location = AddressCandidates[0].location;
+            view.goTo({
+              position: {
+                x: location.longitude,
+                y: location.latitude,
+                z: 50
+              }
+            });
+          });
+        };
+        menuDiv.appendChild(itemDiv);
+
+      });
+		
+		
+		}
+  
+ 
+
+modules = [      "esri/config",      "esri/tasks/Locator",
+
+      "esri/Camera",
+      "esri/WebScene",
+
+      "esri/renderers/SimpleRenderer",
+	  
+
+      "esri/symbols/PolygonSymbol3D",
+      "esri/symbols/ExtrudeSymbol3DLayer",
+	  
+	  
+		"esri/widgets/Search",
+		"esri/widgets/BasemapToggle",
+      "esri/views/SceneView",
+
+      "esri/webscene/Slide",
+
+
+      "dojo/domReady!"];
+
+settings = {
+  disableLog: true,
+  disableOverviewMap: true
+};
+
+</script>
+
+<script src="./support/snippet.js"></script>

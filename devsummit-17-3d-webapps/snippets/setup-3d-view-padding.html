@@ -1,0 +1,39 @@
+<script>
+function snippet() {
+  view = new SceneView({
+    container: "viewDiv",
+
+    map: new EsriMap({
+      basemap: "satellite",
+      ground: "world-elevation"
+    }),
+
+    center: [0, 0]
+  });
+
+  var viewDiv = document.getElementById("viewDiv");
+
+  viewDiv.appendChild(create("div", {
+    style: "position: absolute; top: 0; height: 50px; left: 0; right: 0; background: rgba(255, 255, 255, 0.8);"
+  }));
+
+  viewDiv.appendChild(create("div", {
+    style: "position: absolute; top: 50px; bottom: 0; left: 0; width: 150px; background: rgba(255, 255, 255, 0.8);"
+  }));
+}
+
+function play() {
+  view.padding = {
+    top: 50,
+    left: 150
+  };
+}
+
+settings = {
+  disableOverviewMap: true,
+  disableLog: true
+};
+
+</script>
+
+<script src="./support/snippet.js"></script>

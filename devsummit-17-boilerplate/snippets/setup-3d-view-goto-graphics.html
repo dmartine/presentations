@@ -1,0 +1,65 @@
+<script>
+function snippet() {
+  view = new SceneView({
+    container: "viewDiv",
+
+    map: new EsriMap({
+      basemap: "satellite",
+      ground: "world-elevation"
+    }),
+
+    camera: {
+      position: {
+        x: 7.918,
+        y: 46.598,
+        z: 1466.92
+      },
+      heading: 5.98,
+      tilt: 82.47
+    }
+  });
+
+  view.then(function() {
+    var treeStyleUrl = require.toUrl("./data/FagusSylvatica.json");
+
+    var sym = new PointSymbol3D(new ObjectSymbol3DLayer({
+      resource: {
+        href: treeStyleUrl
+      },
+
+      width: 40,
+      height: 80
+    }));
+
+    for (var i = 0; i < 20; i++) {
+      view.graphics.add(new Graphic({
+        geometry: new Point({
+          x: 881593.0984053069 + Math.random() * 400 - 200,
+          y: 5878206.130660184 + Math.random() * 400 - 200,
+
+          spatialReference: 102100
+        }),
+
+        symbol: sym
+      }));
+    }
+  });
+
+  view.watch("camera", function(camera) {
+    window.log("scale:", Math.round(view.scale / 1000) * 1000, ", heading:", Math.round(camera.heading), ", tilt:", Math.round(camera.tilt));
+  });
+}
+
+function play() {
+  view.goTo({
+    target: view.graphics,
+    scale: 5000,
+    heading: 30,
+    tilt: 60
+  });
+}
+
+modules = ["esri/symbols/PointSymbol3D", "esri/symbols/ObjectSymbol3DLayer", "esri/geometry/Point", "esri/Graphic"]
+</script>
+
+<script src="./support/snippet.js"></script>

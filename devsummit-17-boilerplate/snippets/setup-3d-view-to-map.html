@@ -1,0 +1,60 @@
+<script>
+function snippet() {
+  view = new SceneView({
+    container: "viewDiv",
+
+    map: new EsriMap({
+      basemap: "hybrid",
+      ground: "world-elevation"
+    }),
+
+    camera: {
+      position: {
+        x: 11.023,
+        y: 41.58,
+        z: 257943.27
+      },
+      heading: 356.08,
+      tilt: 63.99
+    }
+  });
+}
+
+function play() {
+  for (var x = 1; x <= 2; x++) {
+    for (var y = 1; y <= 2; y++) {
+      var px = x * (view.width / 3);
+      var py = view.height - y * (view.height / 3);
+
+      var pt = view.toMap(px, py);
+
+      view.graphics.add(new Graphic({
+        geometry: pt.clone(),
+        symbol: new PointSymbol3D(new ObjectSymbol3DLayer({
+          resource: {
+            primitive: "sphere"
+          },
+
+          material: {
+            color: "red"
+          },
+
+          width: 30000
+        }))
+      }));
+    }
+  }
+
+  view.watch("camera", function() {
+    window.log(view.graphics.map(function(graphic) {
+      var pt = view.toScreen(graphic.geometry);
+
+      return "[" + Math.round(pt.x) + ", " + Math.round(pt.y) + "]";
+    }).join(", "));
+  });
+}
+
+modules = ["esri/symbols/PointSymbol3D", "esri/symbols/ObjectSymbol3DLayer", "esri/Graphic"];
+</script>
+
+<script src="./support/snippet.js"></script>
