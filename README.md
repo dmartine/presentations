@@ -1,1 +1,2 @@
-A collection of presentations.
+## Presentations
+This repo contains a collection of presentations.
