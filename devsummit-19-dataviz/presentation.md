@@ -104,6 +104,7 @@ Let's build [this chart](https://codepen.io/davidjmart/pen/WPoQBE)
 <div class="fragment">or <code>yarn add @esri/cedar</code></div>
 
 ---
+
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Or from CDN
@@ -335,8 +336,10 @@ Note:
 - we're expanding API
 - aligning w/ shared chart spec
 
-<!--
+
 ---
+
+<!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Create your own chart specification
 
@@ -368,10 +371,9 @@ definition.specification = {
     }
   ]
 }
+
 ```
 
 Accepts any [amCharts config parameters](https://docs.amcharts.com/3/javascriptcharts/AmChart) -->
 
 ---
-
-### The End
