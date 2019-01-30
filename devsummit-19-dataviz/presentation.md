@@ -166,7 +166,6 @@ definition.datatsets = [{
 
 ---
 
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Definition `series`
@@ -184,8 +183,6 @@ definition.series = [
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Create chart instance (ESM)
-
-
 
 
 ```js
