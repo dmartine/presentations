@@ -1,4 +1,4 @@
----
+
 <!-- .slide: data-background="../template/images/Slide7.png" -->
 
 <!--div style="margin: auto; padding-top: 50px; padding-bottom: 50px; width: 80%; background: rgba(30,30,30,0.9)"/-->
@@ -144,7 +144,6 @@ definition.type = 'bar';
   <li class="fragment">Predefined: `'bar'`, `'line'`, `'scatter'`, `'pie'`</li>
   <li class="fragment">Or provide your own: `specification: {...}`</li>
 <ul>
-
 
 ---
 
@@ -339,7 +338,6 @@ definition.legend = {
 Note:
 - we're expanding API
 - aligning w/ shared chart spec
-
 
 ---
 
