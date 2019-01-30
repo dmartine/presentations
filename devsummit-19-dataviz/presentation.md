@@ -104,7 +104,6 @@ Let's build [this chart](https://codepen.io/davidjmart/pen/WPoQBE)
 <div class="fragment">or <code>yarn add @esri/cedar</code></div>
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Or from CDN
@@ -122,7 +121,6 @@ Let's build [this chart](https://codepen.io/davidjmart/pen/WPoQBE)
 
 ---
 
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Build definition
@@ -137,7 +135,6 @@ var definition = {};
 
 ---
 
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Definition `type`
@@ -149,6 +146,7 @@ definition.type = 'bar';
   <li class="fragment">Predefined: `'bar'`, `'line'`, `'scatter'`, `'pie'`</li>
   <li class="fragment">Or provide your own: `specification: {...}`</li>
 <ul>
+
 
 ---
 
