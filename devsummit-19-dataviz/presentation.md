@@ -10,7 +10,6 @@ Rene Rubalcava, Esri
 David Martinez, Esri 
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
   ## [Cedar](https://github.com/esri/cedar)
@@ -19,7 +18,6 @@ David Martinez, Esri
 <h3>JavaScript Charts for ArcGIS</h3>
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 <h3><img src="../template/images/globe.png" height="100" class="inline transparent">
@@ -28,8 +26,6 @@ Integrated with ArcGIS</h3>
 <small class="fragment">Use `url` / `query` or `featureSet`</small>
 
 ---
-
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 <h3><img src="../template/images/icons8-development_skill_filled.png" class="inline transparent">
@@ -41,8 +37,6 @@ Note:
 More and more means aligning w/ Pro's defaults
 
 ---
-
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 <h3><img src="../template/images/icons8-recycle_sign_filled.png" class="inline transparent">
@@ -52,7 +46,6 @@ Note:
 find yourself making same overrides again and again, create own chart type
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Process
@@ -79,16 +72,12 @@ find yourself making same overrides again and again, create own chart type
 </div>
 
 ---
-
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 <h3><img src="../template/images/icons8-rocket_filled.png" class="inline transparent">
 Getting started</h3>
 
 ---
-
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 <a href="https://codepen.io/davidjmart/pen/WPoQBE"><img src="../template/images/simple-bar-chart.png" height="500" class="transparent" /></a>
@@ -96,7 +85,6 @@ Getting started</h3>
 Let's build [this chart](https://codepen.io/davidjmart/pen/WPoQBE)
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Install with package manager
@@ -104,7 +92,6 @@ Let's build [this chart](https://codepen.io/davidjmart/pen/WPoQBE)
 <div class="fragment">or <code>yarn add @esri/cedar</code></div>
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Or from CDN
@@ -121,7 +108,6 @@ Let's build [this chart](https://codepen.io/davidjmart/pen/WPoQBE)
 ```
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Build definition
@@ -135,7 +121,6 @@ var definition = {};
 <ul>
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Definition `type`
@@ -150,8 +135,6 @@ definition.type = 'bar';
 
 
 ---
-
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Definition `datasets`
@@ -164,7 +147,6 @@ definition.datatsets = [{
 ```
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Definition `series`
@@ -192,7 +174,6 @@ const myChart = new Chart('elementId', definition)
 ```
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Create chart instance (UMD)
@@ -206,7 +187,6 @@ var myChart = new cedar.Chart('elementId', definition)
 &nbsp;
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Show the chart
@@ -256,7 +236,6 @@ graphics.sort(function(a, b) {
 ```
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Aggregating map data
@@ -315,7 +294,6 @@ definition.overrides = {
 Accepts any [amCharts config parameters](https://docs.amcharts.com/3/javascriptcharts/AmChart)
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Better to use cedar API
@@ -338,7 +316,6 @@ Note:
 
 
 ---
-
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Create your own chart specification
