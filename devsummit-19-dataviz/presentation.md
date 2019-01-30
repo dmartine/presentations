@@ -1,4 +1,4 @@
-<!-- .slide: data-background="../template/images/Slide7.png" -->
+<!-- .slide: data-background="../template/images/Slide7.PNG" -->
 
 <!--div style="margin: auto; padding-top: 50px; padding-bottom: 50px; width: 80%; background: rgba(30,30,30,0.9)"/-->
 
