@@ -1,7 +1,5 @@
 <!-- .slide: data-background="../template/images/Slide7.png" -->
 
-<!--div style="margin: auto; padding-top: 50px; padding-bottom: 50px; width: 80%; background: rgba(30,30,30,0.9)"/-->
-
 <h1>Data Visualizations</h1>
 ### 
 
@@ -230,7 +228,7 @@ cedarChart.show()
 
 ### Charting features
 
-<a href="https://codepen.io/davidjmart/pen/daOYgB?editors=0110"><img src="../template/images/map-with-feature-chart.png" height="500" class="transparent" /></a>
+<a href="https://codepen.io/davidjmart/pen/daOYgB"><img src="../template/images/map-with-feature-chart.png" height="500" class="transparent" /></a>
 
 ---
 <!-- .slide: data-background="../template/images/Slide6.png" -->
