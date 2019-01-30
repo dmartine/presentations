@@ -1,9 +1,9 @@
-<!-- .slide: data-background="../template/images/Slide7.png" -->
+<!-- .slide: data-background="../template/images/Slide7.PNG" -->
 
 <!--div style="margin: auto; padding-top: 50px; padding-bottom: 50px; width: 80%; background: rgba(30,30,30,0.9)"/-->
 
 <h1>Data Visualizations</h1>
-### 
+ 
 
 <br>
 Rene Rubalcava, Esri
@@ -104,6 +104,7 @@ Let's build [this chart](https://codepen.io/davidjmart/pen/WPoQBE)
 <div class="fragment">or <code>yarn add @esri/cedar</code></div>
 
 ---
+
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Or from CDN
@@ -335,8 +336,10 @@ Note:
 - we're expanding API
 - aligning w/ shared chart spec
 
-<!--
+
 ---
+
+<!-- .slide: data-background="../template/images/Slide6.png" -->
 
 ### Create your own chart specification
 
@@ -368,10 +371,9 @@ definition.specification = {
     }
   ]
 }
+
 ```
 
 Accepts any [amCharts config parameters](https://docs.amcharts.com/3/javascriptcharts/AmChart) -->
 
 ---
-
-### The End
