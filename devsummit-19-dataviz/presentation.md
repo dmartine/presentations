@@ -59,7 +59,7 @@ find yourself making same overrides again and again, create own chart type
 <div class="center-align">
   <div class="stack fragment">
     <img style="margin-left: 50px; margin-bottom: 0;" src="../template/images/icons8-thinking_bubble.png" class="transparent">
-    <img style="margin-top: 0" src="img/icons8-under_computer_filled.png" class="transparent">
+    <img style="margin-top: 0" src="images/icons8-under_computer_filled.png" class="transparent">
   </div>
   <div class="stack fragment">
     <img src="../template/images/icons8-cloud_storage.png" class="transparent">
