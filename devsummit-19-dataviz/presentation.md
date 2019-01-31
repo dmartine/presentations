@@ -14,6 +14,38 @@ David Martinez, Esri
 
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
+### Visualizations are any medium to present data, visually, to a visual consumer.
+- Cartography
+- Charts
+- Infographics
+- Tables
+
+---
+
+<!-- .slide: data-background="../template/images/Slide6.png" -->
+
+### Understanding Data
+
+- Compare
+- Sort
+- Filter
+- Highlight
+- Aggregate
+- Re- express
+
+---
+
+<!-- .slide: data-background="../template/images/Slide6.png" -->
+
+### Examples of Data Visualization
+
+- [3D](https://andygup.github.io/dc-plenary-2019/rotating-globe.html)
+- [Python](http://localhost:8888/notebooks/Samples/visualization-with-python-ecosystem-matplotlib-seaborn.ipynb)
+
+---
+
+<!-- .slide: data-background="../template/images/Slide6.png" -->
+
   ## [Cedar](https://github.com/esri/cedar)
   <img src="../template/images/cedar-logo-tree.png" class="transparent" height="200"/>
 </div>
@@ -259,9 +291,9 @@ graphics.sort(function(a, b) {
 
 <!-- .slide: data-background="../template/images/Slide6.png" -->
 
-### Aggregating map data
+### Client-side Queries
 
-<a href="https://codepen.io/davidjmart/pen/daOYgB"><img src="../template/images/map-with-aggregate-chart.png" height="500" class="transparent" /></a>
+<a href="http://martinez10.esri.com/cedar/cedarpanel.html"><img src="../template/images/map-with-aggregate-chart.png" height="500" class="transparent" /></a>
 
 ---
 
