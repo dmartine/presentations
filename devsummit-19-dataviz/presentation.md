@@ -41,7 +41,7 @@ David Martinez, Esri
 ### Examples of Data Visualization
 
 - [3D](https://andygup.github.io/dc-plenary-2019/rotating-globe.html)
-- [Python](http://localhost:8888/notebooks/Samples/visualization-with-python-ecosystem-matplotlib-seaborn.ipynb)
+- [Python](images/visualization-with-python-ecosystem-matplotlib-seaborn.html)
 
 ---
 
