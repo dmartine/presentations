@@ -1,0 +1,19 @@
+{
+    "name": "FlickrSearch",
+    "platform": "HTML",
+    "version": "2.2",
+    "wabVersion": "2.2",
+    "author": "",
+    "description": "Search Flickr based on a Location",
+    "properties": {
+        "hasConfig": true,
+        "hasStyle": true,
+        "hasLocale": true,
+        "hasUIFile": true,
+        "hasSettingPage": true
+    },
+    "featureActions": [{
+        "name": "GetImages",
+        "uri": "GetImagesFeatureAction"
+    }]
+  }
