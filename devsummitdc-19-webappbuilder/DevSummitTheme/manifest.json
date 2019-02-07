@@ -1,0 +1,50 @@
+{
+"name": "DevSummitTheme",
+"platform": "HTML",
+"panels": [
+  {
+    "name": "FoldablePanel",
+    "description": "This is foldable panel"
+  }
+],
+"styles": [
+  {
+    "name": "default",
+    "description": "this is default style",
+    "styleColor": "#2196f3"
+  },
+  {
+    "name": "medium-gray",
+    "description": "this is gray style",
+    "styleColor": "#6E6E6E"
+  },
+  {
+    "name": "black-gray",
+    "description": "this is black gray style",
+    "styleColor": "#2E3641"
+  },
+  {
+    "name": "white",
+    "description": "this is white with blue style",
+    "styleColor": "#FFFFFF"
+  }
+],
+"layouts": [
+  {
+    "name": "default",
+    "description": "this is default layout"
+  }
+],
+"widgets": [
+  {
+    "name": "HeaderController",
+    "description": "this is theme widget controller"
+  }
+],
+"version": "2.10",
+"wabVersion": "2.10",
+"author": "Esri Inc",
+"description": "DevSummitTheme",
+"copyright": "",
+"license": "http://www.apache.org/licenses/LICENSE-2.0"
+}

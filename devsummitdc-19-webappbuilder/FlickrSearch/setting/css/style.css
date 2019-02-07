@@ -1,0 +1,19 @@
+.flickr-search {
+    height: 100%;
+}
+
+.flickr-search .title {
+    font-weight: bold;
+}
+
+.flickr-search .image-container {
+    height: 90%;
+    overflow: auto;
+    margin-top: 25px;
+}
+
+
+.flickr-search .image-container .flickr-image:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
