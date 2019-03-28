@@ -1,0 +1,103 @@
+OBJECTID,ADDRESS,CITY,STATE,COUNTY,COUNTRY,ZIP,PHONE,NAME
+1398,299 2nd St,San Francisco,CA,San Francisco,United States,94105,415-947-0700,Starbucks
+1400,55 4th St,San Francisco,CA,San Francisco,United States,94103,415-896-1600,Starbucks
+1403,2198 Broadway,Redwood City,CA,San Mateo,United States,94063,650-368-6833,Bob's Courthouse Coffee Shop
+1404,3995 24th St,San Francisco,CA,San Francisco,United States,94114,415-826-1118,Starbucks
+1405,2813 7th St,Berkeley,CA,Alameda,United States,94710,510-845-5264,Uncommon Cafe
+1406,1408 4th St,San Rafael,CA,Marin,United States,94901,415-457-6789,City Cafe
+1407,555 12th St,Oakland,CA,Alameda,United States,94607,510-268-9902,It's A Grind
+1408,1437 23rd Ave,Oakland,CA,Alameda,United States,94606,510-536-5570,23 Billiard & Cafe
+1409,931 23rd St,Richmond,CA,Contra Costa,United States,94804,510-235-9912,Cafe Euro
+1410,32340 Alvarado Blvd,Union City,CA,Alameda,United States,94587,510-487-1879,Starbucks
+1411,950 Las Gallinas Ave,San Rafael,CA,Marin,United States,94903,415-479-6111,Starbucks
+1412,777 Grand Ave,San Rafael,CA,Marin,United States,94901,415-454-2765,Starbucks
+1413,5100 Clayton Rd,Concord,CA,Contra Costa,United States,94521,925-687-2544,Renaissance Cafe
+1414,1554 1st St,Livermore,CA,Alameda,United States,94550,925-455-5667,Starbucks
+1415,6255 College Ave,Oakland,CA,Alameda,United States,94618,510-653-5453,Cold Cafe Coffee
+1416,2523 Durant Ave,Berkeley,CA,Alameda,United States,94704,510-540-0707,Sweetheart Cafe
+1417,3550 Fruitvale Ave,Oakland,CA,Alameda,United States,94602,510-530-7067,Starbucks
+1418,2566 Seminary Ave,Oakland,CA,Alameda,United States,94605,510-568-6196,Seminary Coffee Shop
+1419,3902 Washington Blvd,Fremont,CA,Alameda,United States,94538,510-657-1625,Starbucks
+1420,14523 Big Basin Way,Saratoga,CA,Santa Clara,United States,95070,408-872-0309,Blue Rock Shoot
+1421,14567 Big Basin Way,Saratoga,CA,Santa Clara,United States,95070,408-872-0810,Coffee Grounds
+1422,3741 San Pablo Dam Rd,,CA,Contra Costa,United States,94803,510-223-0781,Neighbor's Donuts
+1423,2072 Salvio St,Concord,CA,Contra Costa,United States,94520,925-849-0030,Peet's Coffee & Tea
+1424,78 S 1st St,San Jose,CA,Santa Clara,United States,95113,408-298-6250,Maui Wowi
+1425,3900 Smith St,Union City,CA,Alameda,United States,94587,510-324-8572,Paddy's Coffee House
+1426,3017 Mission St,San Francisco,CA,San Francisco,United States,94110,415-826-1865,Paisanos Cafe
+1427,139 Noe St,San Francisco,CA,San Francisco,United States,94114,415-431-5282,Jumpin' Java Coffee House
+1428,501 San Mateo Ave,San Bruno,CA,San Mateo,United States,94066,650-952-4295,Starbucks
+1429,685 Market St,San Francisco,CA,San Francisco,United States,94105,415-904-8088,O la La
+1430,1411 Powell St,San Francisco,CA,San Francisco,United States,94133,415-788-6080,Imperial Tea Court
+1431,842 N Delaware St,San Mateo,CA,San Mateo,United States,94401,650-685-8864,Starbucks
+1432,106 S El Camino Real,San Mateo,CA,San Mateo,United States,94401,650-342-8558,Rendez Vous Cafe
+1433,1700 Ocean Ave,San Francisco,CA,San Francisco,United States,94112,415-333-6075,Java on Ocean Coffee House
+1434,1901 Ocean Ave,San Francisco,CA,San Francisco,United States,94127,415-333-9088,King Coffee Shop
+1435,2798 Diamond St,San Francisco,CA,San Francisco,United States,94131,415-239-4060,Tyger's
+1436,343 Sansome St,San Francisco,CA,San Francisco,United States,94104,415-989-8759,Starbucks
+1437,1199 S Van Ness Ave,San Francisco,CA,San Francisco,United States,94110,415-550-1800,Little Spot Cafe
+1438,1050 El Camino Real,Belmont,CA,San Mateo,United States,94002,650-654-5533,Starbucks
+1439,1821 Palmetto Ave,Pacifica,CA,San Mateo,United States,94044,650-359-6938,The Cafe
+1440,609 Ellis St,San Francisco,CA,San Francisco,United States,94109,415-567-1685,Tu Kim Coffee Shop
+1441,375 Taylor St,San Francisco,CA,San Francisco,United States,94102,415-567-4031,Taylor Street Coffee Shop
+1442,343 Clement St,San Francisco,CA,San Francisco,United States,94118,415-386-1618,Java Source
+1443,306 Clement St,San Francisco,CA,San Francisco,United States,94118,415-221-9041,Blue Danube Coffee House
+1444,1551 Dolores St,San Francisco,CA,San Francisco,United States,94110,415-824-5524,Last Laugh Cafe
+1445,939 Stockton St,San Francisco,CA,San Francisco,United States,94108,415-982-6111,Little Paris Coffee Shop
+1446,950 King Plz,Daly City,CA,San Mateo,United States,94015,650-763-1635,Onyx Cafe
+1447,689 Townsend St,San Francisco,CA,San Francisco,United States,94103,415-255-7561,Starbucks
+1448,5549 Geary Blvd,San Francisco,CA,San Francisco,United States,94121,415-933-8465,Javacat Coffee
+1449,601 Van Ness Ave,San Francisco,CA,San Francisco,United States,94102,415-593-2661,Peet's Coffee & Tea
+1450,1455 Foxworthy Ave,San Jose,CA,Santa Clara,United States,95118,408-445-8772,Starbucks
+1514,3070 H de la Rosa Sr St,Soledad,CA,Monterey,United States,93960,831-678-0199,Starbucks
+1515,324 Center St,Healdsburg,CA,Sonoma,United States,95448,707-433-3599,Philip Anacker
+1516,904 2nd St,Sacramento,CA,Sacramento,United States,95814,916-442-2090,Old Train Coffee & Smoothie Bar
+1517,8191 Auburn Blvd,Citrus Heights,CA,Sacramento,United States,95610,916-725-7165,Lodge Coffee Shop
+1518,6013 Florin Rd,,CA,Sacramento,United States,95823,916-429-0630,Starbucks
+1519,12195 Tributary Point Dr,,CA,Sacramento,United States,95670,916-353-1038,Starbucks
+1520,1005 Merchant St,Vacaville,CA,Solano,United States,95688,707-446-4259,Wren's Cafe
+1521,1235 Stratford Ave,Dixon,CA,Solano,United States,95620,707-678-7400,Starbucks
+1522,2377 Gold Meadow Way,,CA,Sacramento,United States,95670,916-631-1955,Bonjour
+1523,500 Market Pl,San Ramon,CA,Contra Costa,United States,94583,925-830-1116,Starbucks
+1524,75 Mt Hermon Rd,Scotts Valley,CA,Santa Cruz,United States,95066,831-440-9546,Joe on the Go
+1525,10635 Folsom Blvd,Rancho Cordova,CA,Sacramento,United States,95670,916-364-4940,Starbucks
+1526,2285 RAILROAD Ave,Pittsburg,CA,Contra Costa,United States,94565,925-427-3025,Starbucks
+1527,3101 Geary Blvd,San Francisco,CA,San Francisco,United States,94118,415-386-2057,Royal Ground Coffee
+1528,2519 Esplanade,Chico,CA,Butte,United States,95926,530-566-9556,Java Detour Chico
+1529,20439 Redwood Rd,,CA,Alameda,United States,94546,510-537-0181,Peet's Coffee & Tea
+1530,20629 Redwood Rd,,CA,Alameda,United States,94546,925-828-1200,Starbucks
+1531,2200 Santa Rosa Ave,Santa Rosa,CA,Sonoma,United States,95407,707-541-0257,Starbucks
+1532,521 4th St,Santa Rosa,CA,Sonoma,United States,95401,707-636-0180,Cafe Azul
+1533,1071 Santa Rosa Plz,Santa Rosa,CA,Sonoma,United States,95401,707-569-8457,Starbucks
+1534,1121 Alhambra Blvd,Sacramento,CA,Sacramento,United States,95816,915-457-2441,Sargents House of Coffee
+1535,770 L St,Sacramento,CA,Sacramento,United States,95814,916-443-6896,Caffe Breesie
+1536,450 Raleys Towne Ctr,Rohnert Park,CA,Sonoma,United States,94928,707-585-2940,Mocha Mamas Drive Thru Expresso
+1537,1565 Eureka Rd,Roseville,CA,Placer,United States,95661,916-797-3191,Starbucks
+1538,1901 J St,Sacramento,CA,Sacramento,United States,95811,916-444-1892,Starbucks
+1539,7600 Greenhaven Dr,Sacramento,CA,Sacramento,United States,95831,916-395-9230,Caffe Latte
+1540,6001 Madison Ave,,CA,Sacramento,United States,95608,916-348-8466,Daily Grind Coffee
+1541,6908 Fair Oaks Blvd,,CA,Sacramento,United States,95608,916-485-6798,Starbucks
+1542,4000 Bay St,Fremont,CA,Alameda,United States,94538,510-353-9590,Bay Street Coffee
+1543,1207 Emerald Bay Rd,South Lake Tahoe,CA,El Dorado,United States,96150,530-541-2161,Ernie's Coffee Shop
+1544,2780 Stony Point Rd,Santa Rosa,CA,Sonoma,United States,95407,707-545-7057,Starbucks
+1545,1 RAILROAD Ave,Danville,CA,Contra Costa,United States,94526,925-743-1664,Starbucks
+1546,1269 California Ave,Pittsburg,CA,Contra Costa,United States,94565,925-432-4568,Starbucks
+1547,2010 Freedom Blvd,Watsonville,CA,Santa Cruz,United States,95019,831-728-2640,Starbucks
+1548,2024 Freedom Blvd,Watsonville,CA,Santa Cruz,United States,95019,831-786-0714,Starbucks
+1549,330 E Hamilton Ave,Campbell,CA,Santa Clara,United States,95008,408-370-2493,Starbucks
+1550,6009 Snell Ave,San Jose,CA,Santa Clara,United States,95123,408-972-1857,Starbucks
+1551,1544 Palos Verdes Mall,Walnut Creek,CA,Contra Costa,United States,94597,925-287-1709,Starbucks
+1552,950 The Alameda,San Jose,CA,Santa Clara,United States,95126,408-295-5690,Crema Coffee
+1553,20 Eureka St,Sutter Creek,CA,Amador,United States,95685,209-267-5550,Sutter Creek Roasting House
+1554,1126 14th St,Modesto,CA,Stanislaus,United States,95354,209-521-8000,Queen Bean Coffee House
+1555,1507 Mitchell Rd,Ceres,CA,Stanislaus,United States,95307,209-537-6135,Starbucks
+1556,1001 Kansas Ave,,CA,Stanislaus,United States,95351,209-577-2990,Donut Deli
+1557,501 E St,Williams,CA,Colusa,United States,95987,530-473-5013,Java Stop
+1558,18202 Main St,,CA,Tuolumne,United States,95327,209-984-0138,Jamestown Coffee Emporium
+1559,912 N Yosemite St,Stockton,CA,San Joaquin,United States,95203,209-943-6938,Blackwater Cafe
+1560,1228 Galleria Blvd,Roseville,CA,Placer,United States,95678,916-784-7004,Starbucks
+1561,2535 Pacific Ave,Stockton,CA,San Joaquin,United States,95204,209-463-8877,Starbucks
+1562,640 E Cotati Ave,Cotati,CA,Sonoma,United States,94931,707-794-9016,Starbucks
+1563,755 Cochrane Rd,Morgan Hill,CA,Santa Clara,United States,95037,408-776-1364,Peet's Coffee & Tea
+1564,14330 San Pablo Ave,San Pablo,CA,Contra Costa,United States,94806,510-215-1102,Starbucks
+1565,1240 Churn Creek Rd,Redding,CA,Shasta,United States,96003,530-222-5342,Starbucks
