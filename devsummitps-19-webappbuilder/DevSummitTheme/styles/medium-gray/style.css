@@ -1,0 +1,118 @@
+@import 'css/devsummittheme.css';
+.jimu-main-background{
+background-color: #fff;
+}
+.jimu-widget-homebutton,
+.jimu-widget-mylocation,
+.jimu-widget-zoomslider .zoom,
+.jimu-widget-homebutton .HomeButton .home,
+.jimu-widget-mylocation .place-holder{
+background-color: #6E6E6E;
+opacity: .9;
+}
+.jimu-title,
+.jimu-subtitle {
+color: #6E6E6E;
+}
+.jimu-widget-header-controller{
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+box-shadow: none;
+border-bottom: 2px solid #6E6E6E;
+}
+.jimu-widget-header-controller .icon-node{
+opacity: 1;
+background: #6E6E6E;
+border-right: 0;
+height: 30px !important;
+width: 30px !important;
+margin-top: 4px;
+margin-right: 10px;
+-moz-box-radius: 50%;
+-webkit-border-radius: 50%;
+border-radius: 50%;
+}
+.jimu-widget-header-controller .icon-node img{
+height: 14px;
+width: 14px;
+}
+.jimu-widget-header-controller .icon-node.jimu-state-selected{
+border-top: 0;
+background-color: #6E6E6E;
+}
+.jimu-widget-header-controller .drop-triangle{
+bottom: 5px;
+margin-left: -5px;
+}
+.jimu-widget-header-controller .jimu-drop-menu{
+background-color: #6E6E6E
+}
+.jimu-widget-header-controller .jimu-drop-menu .menu-item img{
+width: 14px;
+height: 14px;
+margin-top: 13px;
+}
+.jimu-widget-header-controller .jimu-drop-menu .menu-item .label{
+font-size: 12px;
+}
+.jimu-link:link, .jimu-link:visited{
+color: #666;
+}
+.jimu-more-icon-cover{
+background-color: #6E6E6E;
+opacity: 65;
+}
+.jimu-header-more-popup {
+background-color: #000;
+}
+.jimu-header-more-popup .icon-node {
+background-color: #6E6E6E;
+}
+.jimu-header-more-popup .points{
+background: #000;
+}
+.jimu-header-more-popup .close,
+.jimu-header-more-popup .close-inner{
+background-color: #2e3641;
+}
+.jimu-header-more-popup .points-inner {
+position: relative;
+top: -3px;
+}
+.jimu-header-more-popup .point {
+width: 5px;
+height: 5px;
+background-color: #9e9e9e;
+}
+.jimu-header-more-popup .point-selected {
+background-color: #fff;
+}
+.jimu-header-more-popup img {
+height: 30px !important;
+width: 30px !important;
+}
+.jimu-on-screen-widget-panel>.jimu-panel-title,
+.jimu-foldable-panel>.jimu-panel-title,
+.jimu-title-panel>.title{
+background-color: #6E6E6E;
+}
+.jimu-panel{
+border: 0;
+}
+.esriPopup .titlePane {
+background-color: #6E6E6E;
+}
+.jimu-widget-search .arcgisSearch .searchBtn{
+padding: 6px;
+border: none;
+}
+.jimu-widget-search .arcgisSearch .searchBtn:hover,
+.jimu-widget-search .arcgisSearch .searchBtn:focus{
+background-color: #fff;
+color: #6E6E6E;
+}
+.jimu-widget-search .arcgisSearch .searchGroup .searchInput{
+color: #6E6E6E;
+font-size: 14px;
+border: none;
+}
